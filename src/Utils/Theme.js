@@ -1,7 +1,7 @@
 export const themeLight = {
-  colors: { textColor: 'white', backgroundColor: '#f39c12' },
+  colors: { textColor: 'white', backgroundColor: '#d35400' },
 }
 
 export const themeDark = {
-  colors: { textColor: '#f39c12', backgroundColor: 'black' },
+  colors: { textColor: '#d35400', backgroundColor: 'black' },
 }
