@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Home from './Components/Home/Home'
+import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
+import { ThemeContext } from './Context/ThemeContext'
+
+const buttonStyle = { textAling: 'center', background: 'none' }
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeContext.Provider>
+      <main>
+        <Header />
+        <button style={buttonStyle}>Toogle Dark Mod</button>
+        <Home />
+        <Footer />{' '}
+      </main>
+    </ThemeContext.Provider>
+  )
 }
 
-export default App;
+export default App
